@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    background-color: #030814;
+    color: white;
+    font-family: sans-serif;
+}
+
+main{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    margin-right: 12px;
+}
+
+.btn-cta{
+    border: 2px solid #ff3515;
+    padding: 12px;
+}
+
+.btn-cta:hover{
+    background-color: #ff3515;
+    color: white;
+}
+
+/* Hero Section */
+
+.hero-section{
+    margin-top: 1.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-image{
+    width: 50%;
+}
+
+.hero-note{
+    text-align: justify;
+    width: 45%;
+}
+
+.hero-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero-text{
+    line-height: 2;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+.hire-me{
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    background-color: #ff3515;
+    color: white;
+    margin-top: 12px;
+}
+
+/* Skill Section */
+.skill{
+    margin: 42px;
+}
+.skill h1{
+    text-align: center;
+}
+
+.skill-text{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    margin: 12px;
+}
+
+.skill-body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+}
+
+.skill-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+progress{
+    height: 50px;
+    width: 20vw;
+    accent-color: #ff0000;
+}
+
+.skill-text{
+    text-align: justify;
+}
+
+.skill-p{
+    margin: 12px 0 12px 0;
+}
+
+.skill-text-center{
+    margin-top: 24px;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+.skill-text-center p{
+    font-size: 1.1rem;
+    font-weight: lighter;
+} 
+
+main{
+    margin-bottom: 24px;
+}
+
+
+/*  Contact Section */
+.contact-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+input, textarea{
+    margin-top: 12px;
+    padding: 12px;
+    width: 300px;
+}
+
+.submit{
+    padding: 12px 24px;
+    background-color: #ff3515;
+    color: white;
+    font-size: 1.2rem
+}
+
+.contact-title{
+    font-size: 2rem;
+    color: #555;
+    font-weight: bolder;
+}
+
+.title{
+    color: #777;
+}
+
+/* Media Query */
+@media screen and (max-width:550px) {
+    main{
+    width: 98vw;
+}
+
+.logo{
+    /* color: #555; */
+    font-size: 1.1em;
+}
+.hero-section{
+    flex-direction: column-reverse;
+}
+.hero-image{
+    width: 100%;
+}
+.hero-note{
+    width: 100%;
+}
+.hire-me{
+    width: 80vw;
+    margin-left: 1.3rem;
+}
+/* Skill  */
+.skill-body{
+    display: flex;
+    flex-direction: column;
+}
+
+progress{
+    width: 80vw;
+}
+
+.skill-text-center{
+    width: 80vw;
+}
+
+.contact-wrap img{
+    display: none;
+}
+
+}
